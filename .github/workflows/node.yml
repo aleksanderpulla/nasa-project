@@ -6,18 +6,12 @@ on:
     branches: [ master ]
 jobs: 
   build:
-    env: 
-      CI: true
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x]  
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v2
-      - name: Use Node.js version ${{ matrix.node-version }}
+      - name: Use Node.js version 16
         uses: actions/setup-node@v2
         with: 
-          node-version: ${{ matrix.node-version }}
-      - run: npm install react@17.0.1 react-dom@17.0.1 react-scripts@5.0.0 react-router-dom@5.2.0 arwes@1.0.0-alpha.5 supertest@6.2.2
+          node-version: '16'
+      - run: npm install react@17.0.1 react-dom@17.0.1 react-scripts@5.0.0 react-router-dom@5.2.0 arwes@1.0.0-alpha.5 
       - run: npm run build --prefix client     
-      - run: npm test
