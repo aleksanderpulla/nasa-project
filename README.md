@@ -1,6 +1,6 @@
 # NASA Mission Control Project
 
-The completed version of NASA project that I have depoyed after completing the course [Complete Node.js Developer: Zero to Mastery](https://academy.zerotomastery.io/p/learn-node-js?affcode=441520_1jw4f2ay).
+The completed version of NASA project that I have deployed after completing the course [Complete Node.js Developer: Zero to Mastery](https://academy.zerotomastery.io/p/learn-node-js?affcode=441520_1jw4f2ay).
 
 ## Getting Started
 
